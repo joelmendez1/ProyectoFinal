@@ -3,6 +3,12 @@
     padding: 0;
 }
 
+/* MIS VARIABLES*/
+
+:root {
+    --main-font:'Bebas Neue', cursive;
+}
+
 /* HEADER */
 
 header {
@@ -32,6 +38,8 @@ header div {
     align-items: center;
 }
 
+/* NAVEGADOR */
+
 .navegador {
     display: flex;
     justify-content: space-between;
@@ -39,10 +47,45 @@ header div {
     font-size: large;
 }
 
+.navegador a {
+    text-decoration: none;
+    font-family: var(--main-font);
+    font-size: x-large;
+    color: black;
+}
+
+.navegador a:hover {
+    color: #7e1228;
+}
+
+/* LOGO */
+
 header div h1 {
     font-size: 50px;
-
+    font-family: var(--main-font);
+    border-top: 1px  solid black;
+    border-bottom: 1px  solid black;
 }
+
+/* BOTÓN */
+
+.btn-group {
+    width: 50%;
+}
+
+.dropdown-menu {
+    text-align: center;
+    border: 1px solid black;
+}
+
+.dropdown-menu li:hover {
+    background-color: #7e1228;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+}
+
+/* REGISTRO-INICIO SESIÓN */
 
 .registro {
     display: flex;
@@ -53,20 +96,21 @@ header div h1 {
 
 .login {
     display: flex;
-    flex-direction: column;
+    margin-left: 10%;
 }
 
-.btn-group {
-    width: 50%
+.login button {
+    padding: 3px 5px;
+    border-radius: 5px;
+    border-color: #0D6EFD;
+    background-color:transparent;
 }
 
-.dropdown-menu {
-    text-align: center;
-    padding-bottom: 5px;
-}
-
-.dropdown-menu li:hover {
-    background-color: red;
+button a {
+    text-decoration: none;
+    font-family: var(--main-font);
+    font-size: large;
+    color: black;
 }
 
 /* MAIN */
@@ -74,6 +118,7 @@ header div h1 {
 main {
     display: flex;
     flex-direction: column;
+    background-color: rgb(235, 227, 227);
 }
 
 .center {
@@ -92,11 +137,14 @@ main {
 .center p {
     color: white;
     font-size: 40px;
+    font-family: var(--main-font);
+    text-shadow: 1px 1px 2px black;
 }
 
 .center h3 {
     color: white;
     font-size: 80px;
+    text-shadow: 1px 1px 2px black;
 }
 
 .tamaño {
@@ -111,11 +159,34 @@ main {
 
 main section {
     display: flex;
+    margin-bottom: 2px;
 }
 
 main section div {
     width: calc(100% / 3);
     height: 50vh;
+    margin-right: 5px;
+    border: 0.5px solid rgb(126, 126, 126);
+    border-radius: 10px;
+}
+
+main section div:nth-last-child(1) {
+    margin-right: 0px;
+}
+
+main section div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main section div p {
+    font-family: var(--main-font);
+    font-size: xx-large;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    text-decoration: underline 2px;
+    text-align: center;
 }
 
 .first_img {
@@ -125,3 +196,49 @@ main section div {
     background-position-y: center;
     width: 100%;
 }
+.second_img {
+    background-image: url(../Assets/campera_cuero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    width: 100%;
+}
+
+.third_img {
+    background-image: url(../Assets/zapatos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    width: 100%;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    height: 4vh;
+    padding: 0px 10px 0 10px;
+    background-color: #EBE3E3;
+    color: rgb(31, 30, 30);
+}
+
+footer p {
+    font-family: var(--main-font);
+    font-size: large;
+    width: 50%;
+    height: 100%;
+}
+
+.textos {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    height: 100%;
+}
+
+.textos p {
+    font-size: large;
+    text-align: center;
+}
+
