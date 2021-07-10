@@ -1,0 +1,104 @@
+$main-font: 'Bebas Neue', cursive;
+$main-color: rgb(235, 227, 227);
+$textshadow-default: 1px 1px 2px black;
+$button-colors: #0D6EFD;
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: $main-color;
+    section {
+        display: flex;
+        margin-bottom: 2px;
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: calc(100% / 3);
+            height: 50vh;
+            margin-right: 5px;
+            border: 0.5px solid rgb(126, 126, 126);
+            border-radius: 10px;
+            p {
+                font-family: var(--main-font);
+                font-size: xx-large;
+                color: white;
+                text-shadow: 1px 1px 2px black;
+                text-decoration: underline 2px;
+                text-align: center;
+            }
+        }
+        div:nth-last-child(1) {
+            margin-right: 0px;
+        }
+    }
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../Assets/Main_imagen.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    margin-bottom: 10px;
+    p {
+        color: white;
+        font-size: 40px;
+        font-family: var(--main-font);
+        text-shadow: 1px 1px 2px black;
+    }
+    h3 {
+        color: white;
+        font-size: 80px;
+        text-shadow: 1px 1px 2px black;
+    }
+}
+
+.first_img {
+    background-image: url(../Assets/buzos_de_lana.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    width: 100%;
+}
+.second_img {
+    background-image: url(../Assets/campera_cuero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    width: 100%;
+}
+
+.third_img {
+    background-image: url(../Assets/zapatos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    height: 4vh;
+    padding: 0px 10px 0 10px;
+    background-color: #EBE3E3;
+    color: rgb(31, 30, 30);
+    font-family: $main-font;
+    font-size: large;
+    .textos {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+}
+
+
+
+
+

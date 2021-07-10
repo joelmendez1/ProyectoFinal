@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to our commerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Estilos/generalsass.css">
+    <link rel="stylesheet" href="../Estilos/contactosass.css">
+</head>
+<body>
+    <header>
+        <div>
+            <nav class="navegador">
+                <a href="../index.html">Home</a>
+                <a href="../html's/catalogo.html">Catálogo</a>
+                <a href="#">Contacto</a>
+            </nav>
+            <h1>Shopper</h1>
+            <nav class="registro">
+                <div class="btn-group">
+                    <button class="btn btn-primary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Categorias
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a href="http://127.0.0.1:5500/html's/catalogo.html#autumn">Autumn Collection</a></li>
+                      <li><a href="http://127.0.0.1:5500/html's/catalogo.html#winter">Winter Collection</a></li>
+                      <li><a href="http://127.0.0.1:5500/html's/catalogo.html#spring">Spring Collection</a></li>
+                      <li><a href="http://127.0.0.1:5500/html's/catalogo.html#summer">Summer Collection</a></li>
+                    </ul>
+                  </div>
+                <div class="login">
+                    <button><a href="../html's/registro.html">Registrarse</a></button>
+                    <button><a href="../html's/login.html">Iniciar Sesión</a></button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h2>Contactanos</h2>
+        <form action="" method="">
+            <input type="text" placeholder="Nombre">
+            <br>
+            <input type="email" placeholder="Correo Electrónico">
+            <br>
+            <label class="textodp" for="Departamento">Seleccione un departamento</label>
+            <select name="Departamentos">
+                <option value="Soporte">Soporte técnico</option>
+                <option value="Cobranzas">Cobranzas</option>
+                <option value="Administracion">Administración</option>
+                <option value="Otros">Otro departamento</option>
+            </select>
+            <br>
+            <input type="text" placeholder="Asunto">
+            <br>
+            <textarea name="texto" id="" cols="30" rows="10" placeholder="Deje su mensaje aquí"></textarea>
+            <br>
+            <div>
+                <label for="checkbox">No soy un robot</label>
+                <input type="checkbox">
+            </div>
+            <br>
+            <div class="botones">
+                <input class="button" type="submit">
+                <input class="button" type="reset">
+            </div>
+        </form>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

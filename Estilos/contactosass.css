@@ -1,0 +1,42 @@
+main {
+  background-color: #ebe3e3; }
+  main h2 {
+    font-family: "Bebas Neue", cursive;
+    color: black;
+    text-shadow: 1px 1px 2px white;
+    text-align: center;
+    padding: 30px;
+    text-decoration: underline;
+    margin-top: 2vh; }
+
+form {
+  display: flex;
+  flex-direction: column;
+  font-family: "Bebas Neue", cursive;
+  width: 30%;
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 30px;
+  background-color: whitesmoke; }
+
+.botones {
+  display: flex; }
+
+.button {
+  width: 50%;
+  border-radius: 10px;
+  font-family: "Bebas Neue", cursive;
+  color: black; }
+
+@media only screen and (max-width: 600px) {
+  header {
+    width: 100%; }
+  main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; }
+  .textodp {
+    font-size: small;
+    margin-bottom: 5%; } }
