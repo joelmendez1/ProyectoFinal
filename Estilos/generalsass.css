@@ -36,7 +36,7 @@ header {
     font-size: x-large;
     color: black; }
   .navegador a:hover {
-    color: #7e1228; }
+    color: #bd1637; }
 
 .btn-group {
   width: 40%; }
@@ -46,7 +46,7 @@ header {
   border: 1px solid black; }
   .dropdown-menu li a:hover {
     border-radius: 5px;
-    color: white; }
+    color: #bd1637; }
   .dropdown-menu li a {
     text-decoration: none;
     font-family: "Bebas Neue", cursive;
