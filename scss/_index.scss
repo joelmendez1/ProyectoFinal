@@ -1,9 +1,6 @@
-$main-font: 'Bebas Neue', cursive;
-$main-color: rgb(235, 227, 227);
-$textshadow-default: 1px 1px 2px black;
-$button-colors: #0D6EFD;
+@import "variables.scss";
 
-main {
+#index_main {
     display: flex;
     flex-direction: column;
     background-color: $main-color;
@@ -20,7 +17,7 @@ main {
             border: 0.5px solid rgb(126, 126, 126);
             border-radius: 10px;
             p {
-                font-family: var(--main-font);
+                font-family: $main-font;
                 font-size: xx-large;
                 color: white;
                 text-shadow: 1px 1px 2px black;
@@ -48,7 +45,7 @@ main {
     p {
         color: white;
         font-size: 40px;
-        font-family: var(--main-font);
+        font-family: $main-font;
         text-shadow: 1px 1px 2px black;
     }
     h3 {
@@ -81,22 +78,6 @@ main {
     width: 100%;
 }
 
-footer {
-    display: flex;
-    justify-content: space-between;
-    height: 4vh;
-    padding: 0px 10px 0 10px;
-    background-color: #EBE3E3;
-    color: rgb(31, 30, 30);
-    font-family: $main-font;
-    font-size: large;
-    .textos {
-        width: 60%;
-        display: flex;
-        justify-content: space-between;
-        overflow: hidden;
-    }
-}
 
 
 

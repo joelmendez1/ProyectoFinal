@@ -1,9 +1,6 @@
-$main-font: 'Bebas Neue', cursive;
-$main-color: rgb(235, 227, 227);
-$textshadow-default: 1px 1px 2px black;
-$button-colors: #0D6EFD;
+@import "variables.scss";
 
-main {
+#contacto_main {
     background-color: $main-color;
     h2{
         font-family: $main-font;
@@ -14,29 +11,27 @@ main {
         text-decoration: underline;
         margin-top: 2vh;
     }
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    font-family: $main-font;
-    width: 30%;
-    margin: auto;
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 30px;
-    background-color: whitesmoke;
-}
-
-.botones {
-    display: flex;
-}
-
-.button {
-    width: 50%;
-    border-radius: 10px;
-    font-family: $main-font;
-    color: black;
+    form {
+        display: flex;
+        flex-direction: column;
+        font-family: $main-font;
+        width: 30%;
+        margin: auto;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 30px;
+        background:rgb(201, 199, 199);
+    }
+    .botones {
+        display: flex;
+    }
+    
+    .button {
+        width: 50%;
+        border-radius: 10px;
+        font-family: $main-font;
+        color: black;
+    }
 }
 
 @media only screen and (max-width:600px) {
