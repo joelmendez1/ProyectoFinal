@@ -1,0 +1,60 @@
+@media only screen and (max-width: 800px) {
+    body {
+        background-color: $main-color;
+    }
+    .registro {
+        display: flex;
+        width: auto;
+    }
+    .login {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        button {
+            border: none;
+        }
+        a {
+            font-size: small;
+            text-decoration: underline;
+            :hover {
+                color: orangered;
+            }
+        }
+    }
+    footer {
+        display: flex;
+        background-color: $main-color;
+        p {
+            font-size: small;
+            color: white;
+            text-shadow: 1px 1px 2px black;
+            width:10%;
+        }
+        .textos_footer {
+            width: 70%;
+            text-align: center;
+            p{
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 575px) {
+    #contacto_main {
+        form {
+            display: flex;
+            flex-direction: row;
+            width: 80%;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            height: 80%;
+            #textarea {
+                width: 80%
+            }
+            .botones {
+                width: 300px;
+            }
+        }
+    } 
+}

@@ -97,28 +97,3 @@ button a {
     font-size: large;
     color: black;
 }
-
-@media (max-width: 799px) {
-
-    .login {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .login button {
-        padding: 0 4px 0 4px;
-    }
-
-    .login a {
-        font-size: medium;
-    }
-
-    header div {
-        height: 15vh;
-    }
-
-    .navegador a {
-        font-size: medium;
-    }
-
-}
