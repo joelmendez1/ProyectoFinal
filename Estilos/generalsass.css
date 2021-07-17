@@ -15,6 +15,9 @@
       text-decoration: underline; }
       .login a :hover {
         color: orangered; }
+  .textos {
+    font-size: small;
+    margin-top: 2vh; }
   footer {
     display: flex;
     background-color: #ebe3e3; }
@@ -246,6 +249,9 @@ form {
       text-decoration: underline; }
       .login a :hover {
         color: orangered; }
+  .textos {
+    font-size: small;
+    margin-top: 2vh; }
   footer {
     display: flex;
     background-color: #ebe3e3; }
@@ -318,6 +324,9 @@ form {
       text-decoration: underline; }
       .login a :hover {
         color: orangered; }
+  .textos {
+    font-size: small;
+    margin-top: 2vh; }
   footer {
     display: flex;
     background-color: #ebe3e3; }
