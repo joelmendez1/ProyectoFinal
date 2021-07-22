@@ -1,4 +1,4 @@
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 715px) {
   .registro .login {
     display: flex;
     flex-direction: column-reverse;
@@ -223,7 +223,7 @@ body {
       #main-formulario form #conect #conect:hover {
         transform: rotateX(25deg); }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 715px) {
   .registro .login {
     display: flex;
     flex-direction: column-reverse;
@@ -294,7 +294,7 @@ body {
     font-family: "Bebas Neue", cursive;
     color: black; }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 715px) {
   .registro .login {
     display: flex;
     flex-direction: column-reverse;
@@ -402,7 +402,7 @@ body {
   background-position-y: center;
   width: 100%; }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 715px) {
   .registro .login {
     display: flex;
     flex-direction: column-reverse;
