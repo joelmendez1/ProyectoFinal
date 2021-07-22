@@ -1,4 +1,3 @@
-@import "variables.scss";
 @import 'medias-queries.scss';
 
 #contacto_main {
@@ -21,12 +20,18 @@
         border: 1px solid black;
         border-radius: 10px;
         padding: 30px;
-        background:rgb(201, 199, 199);
+        background: linear-gradient(#4E5F6E, rgb(54, 54, 105));
+        #checkbox {
+            color: black;
+        }
+        input {
+            color: black;
+            text-align: center;
+        }
     }
     .botones {
         display: flex;
     }
-    
     .button {
         width: 50%;
         border-radius: 10px;

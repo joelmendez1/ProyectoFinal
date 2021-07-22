@@ -1,55 +1,48 @@
-@media only screen and (max-width: 800px) {
-  body {
-    background-color: #ebe3e3; }
-  .registro {
+@media only screen and (min-width: 600px) {
+  .registro .login {
     display: flex;
-    width: auto; }
-  .login {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around; }
-    .login button {
-      border: none; }
-    .login a {
-      font-size: small;
-      text-decoration: underline; }
-      .login a :hover {
-        color: orangered; }
-  .textos {
-    font-size: small;
-    margin-top: 2vh; }
-  footer {
-    display: flex;
-    background-color: #ebe3e3; }
-    footer p {
-      font-size: small;
-      color: white;
-      text-shadow: 1px 1px 2px black;
-      width: 10%; }
-    footer .textos_footer {
-      width: 70%;
-      text-align: center; }
-      footer .textos_footer p {
-        width: 50%; } }
-
-@media only screen and (min-width: 575px) {
-  #contacto_main form {
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    flex-wrap: wrap;
+    flex-direction: column-reverse;
     justify-content: space-around;
-    height: 80%; }
-    #contacto_main form #textarea {
+    cursor: pointer; }
+    .registro .login button {
+      padding: 0;
+      border: none;
+      background: none; }
+      .registro .login button :hover {
+        color: white;
+        background: linear-gradient(#4E5F6E, #363669);
+        text-shadow: none;
+        padding: 1px 2px;
+        border-radius: 5px;
+        text-decoration: none; }
+    .registro .login a {
+      font-size: large;
+      color: #fff;
+      text-decoration: underline; }
+  #main-formulario {
+    width: 100%; }
+    #main-formulario form {
       width: 80%; }
-    #contacto_main form .botones {
-      width: 300px; } }
+  .caja {
+    width: 90%; }
+    .caja p {
+      color: white;
+      text-shadow: 1px 1px 2px black; }
+  .cartas {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 45% 45%;
+    grid-row-gap: 30px; }
+  footer {
+    font-size: medium; } }
+
+body {
+  background-color: #ebe3e3; }
 
 main {
   display: flex;
   flex-direction: column;
-  background-color: #ebe3e3;
-  margin-top: 1vh; }
+  background-color: #ebe3e3; }
 
 #autumn {
   margin-top: 3vh; }
@@ -149,135 +142,124 @@ main {
 
 footer {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
-  height: 4vh;
-  background-color: #D7D4C5;
-  padding: 0px 10px 0 10px; }
-  footer p {
-    font-family: "Bebas Neue", cursive;
-    font-size: medium;
-    width: 50%; }
-
-.textos_footer {
-  display: flex;
-  justify-content: space-between;
-  width: 75%; }
-
-#body {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  background: linear-gradient(to right, #00FFFF, #117dd6); }
-
-#body2 {
   width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 7% 0px;
-  background: linear-gradient(to right, #00FFFF, #117dd6); }
-
-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
-  width: 35%;
-  height: auto;
-  border: 1px solid black;
-  border-radius: 5px;
-  background-color: #eceff1;
-  box-shadow: 2px 2px 5px #030303; }
-  form * {
-    margin: 20px 20px; }
-  form input {
-    font-family: "Bebas Neue", cursive;
-    font-size: 15px;
-    padding: 10px;
-    border: unset;
-    border-bottom: 1px solid black;
-    background-color: #eceff1; }
-  form a {
-    font-family: "Bebas Neue", cursive;
-    color: black;
-    text-decoration: none;
-    font-size: large;
-    padding: 10px;
-    border-radius: 15px;
-    align-self: center; }
-
-#ingresar {
+  height: 6vh;
   font-family: "Bebas Neue", cursive;
-  font-size: 30px; }
-
-.checkbox1 {
-  font-family: "Bebas Neue", cursive;
-  font-size: 15px;
-  background-color: #eceff1;
-  text-align: center; }
-
-#conect {
-  width: 50%;
-  align-self: center;
-  padding: 10px;
-  color: white;
-  font-size: 20px;
-  border-radius: 15px;
-  background: linear-gradient(to right, #00FFFF, #117dd6);
-  border: 1px; }
-  #conect #conect:hover {
-    transform: rotateX(25deg); }
-
-@media only screen and (max-width: 800px) {
-  body {
-    background-color: #ebe3e3; }
-  .registro {
+  font-size: large;
+  text-shadow: 1px 1px 2px black; }
+  footer a {
     display: flex;
-    width: auto; }
-  .login {
+    justify-content: space-around;
+    width: 30%;
+    text-decoration: none;
+    color: white; }
+  footer .textos_footer {
+    display: flex;
+    justify-content: flex-end;
+    width: 70%; }
+    footer .textos_footer :hover {
+      color: white;
+      background: linear-gradient(#4E5F6E, #363669);
+      text-shadow: none;
+      padding: 1px 2px;
+      border-radius: 5px;
+      text-decoration: none; }
+
+body {
+  display: flex;
+  flex-direction: column; }
+
+#main-formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh; }
+  #main-formulario form {
     display: flex;
     flex-direction: column;
-    justify-content: space-around; }
-    .login button {
-      border: none; }
-    .login a {
-      font-size: small;
-      text-decoration: underline; }
-      .login a :hover {
-        color: orangered; }
-  .textos {
-    font-size: small;
-    margin-top: 2vh; }
-  footer {
-    display: flex;
-    background-color: #ebe3e3; }
-    footer p {
-      font-size: small;
-      color: white;
-      text-shadow: 1px 1px 2px black;
-      width: 10%; }
-    footer .textos_footer {
-      width: 70%;
+    justify-content: space-between;
+    text-align: center;
+    width: 35%;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #eceff1;
+    box-shadow: 2px 2px 5px #030303; }
+    #main-formulario form * {
+      margin: 20px 20px; }
+    #main-formulario form input {
+      font-family: "Bebas Neue", cursive;
+      font-size: 15px;
+      padding: 10px;
+      border: unset;
+      border-bottom: 1px solid black;
+      background-color: #eceff1; }
+    #main-formulario form a {
+      font-family: "Bebas Neue", cursive;
+      color: black;
+      text-decoration: none;
+      font-size: large;
+      padding: 10px;
+      border-radius: 15px;
+      align-self: center; }
+    #main-formulario form #ingresar {
+      font-family: "Bebas Neue", cursive;
+      font-size: 30px; }
+    #main-formulario form .checkbox1 {
+      font-family: "Bebas Neue", cursive;
+      font-size: 15px;
+      background-color: #eceff1;
       text-align: center; }
-      footer .textos_footer p {
-        width: 50%; } }
+    #main-formulario form #conect {
+      width: 50%;
+      align-self: center;
+      padding: 10px;
+      color: white;
+      font-size: 20px;
+      border-radius: 15px;
+      background: linear-gradient(#4E5F6E, #363669);
+      border: 1px; }
+      #main-formulario form #conect #conect:hover {
+        transform: rotateX(25deg); }
 
-@media only screen and (min-width: 575px) {
-  #contacto_main form {
+@media only screen and (min-width: 600px) {
+  .registro .login {
     display: flex;
-    flex-direction: row;
-    width: 80%;
-    flex-wrap: wrap;
+    flex-direction: column-reverse;
     justify-content: space-around;
-    height: 80%; }
-    #contacto_main form #textarea {
+    cursor: pointer; }
+    .registro .login button {
+      padding: 0;
+      border: none;
+      background: none; }
+      .registro .login button :hover {
+        color: white;
+        background: linear-gradient(#4E5F6E, #363669);
+        text-shadow: none;
+        padding: 1px 2px;
+        border-radius: 5px;
+        text-decoration: none; }
+    .registro .login a {
+      font-size: large;
+      color: #fff;
+      text-decoration: underline; }
+  #main-formulario {
+    width: 100%; }
+    #main-formulario form {
       width: 80%; }
-    #contacto_main form .botones {
-      width: 300px; } }
+  .caja {
+    width: 90%; }
+    .caja p {
+      color: white;
+      text-shadow: 1px 1px 2px black; }
+  .cartas {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 45% 45%;
+    grid-row-gap: 30px; }
+  footer {
+    font-size: medium; } }
 
 #contacto_main {
   background-color: #ebe3e3; }
@@ -298,7 +280,12 @@ form {
     border: 1px solid black;
     border-radius: 10px;
     padding: 30px;
-    background: #c9c7c7; }
+    background: linear-gradient(#4E5F6E, #363669); }
+    #contacto_main form #checkbox {
+      color: black; }
+    #contacto_main form input {
+      color: black;
+      text-align: center; }
   #contacto_main .botones {
     display: flex; }
   #contacto_main .button {
@@ -307,52 +294,43 @@ form {
     font-family: "Bebas Neue", cursive;
     color: black; }
 
-@media only screen and (max-width: 800px) {
-  body {
-    background-color: #ebe3e3; }
-  .registro {
+@media only screen and (min-width: 600px) {
+  .registro .login {
     display: flex;
-    width: auto; }
-  .login {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around; }
-    .login button {
-      border: none; }
-    .login a {
-      font-size: small;
-      text-decoration: underline; }
-      .login a :hover {
-        color: orangered; }
-  .textos {
-    font-size: small;
-    margin-top: 2vh; }
-  footer {
-    display: flex;
-    background-color: #ebe3e3; }
-    footer p {
-      font-size: small;
-      color: white;
-      text-shadow: 1px 1px 2px black;
-      width: 10%; }
-    footer .textos_footer {
-      width: 70%;
-      text-align: center; }
-      footer .textos_footer p {
-        width: 50%; } }
-
-@media only screen and (min-width: 575px) {
-  #contacto_main form {
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    flex-wrap: wrap;
+    flex-direction: column-reverse;
     justify-content: space-around;
-    height: 80%; }
-    #contacto_main form #textarea {
+    cursor: pointer; }
+    .registro .login button {
+      padding: 0;
+      border: none;
+      background: none; }
+      .registro .login button :hover {
+        color: white;
+        background: linear-gradient(#4E5F6E, #363669);
+        text-shadow: none;
+        padding: 1px 2px;
+        border-radius: 5px;
+        text-decoration: none; }
+    .registro .login a {
+      font-size: large;
+      color: #fff;
+      text-decoration: underline; }
+  #main-formulario {
+    width: 100%; }
+    #main-formulario form {
       width: 80%; }
-    #contacto_main form .botones {
-      width: 300px; } }
+  .caja {
+    width: 90%; }
+    .caja p {
+      color: white;
+      text-shadow: 1px 1px 2px black; }
+  .cartas {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 45% 45%;
+    grid-row-gap: 30px; }
+  footer {
+    font-size: medium; } }
 
 #index_main {
   display: flex;
@@ -361,24 +339,26 @@ form {
   #index_main section {
     display: flex;
     margin-bottom: 2px; }
-    #index_main section div {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    #index_main section a {
       width: calc(100% / 3);
-      height: 50vh;
-      margin-right: 5px;
-      border: 0.5px solid #7e7e7e;
-      border-radius: 10px; }
-      #index_main section div p {
+      height: 60vh;
+      text-decoration: none; }
+      #index_main section a div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        margin-right: 5px;
+        border: 0.5px solid #7e7e7e;
+        border-radius: 10px; }
+      #index_main section a p {
         font-family: "Bebas Neue", cursive;
         font-size: xx-large;
         color: white;
         text-shadow: 1px 1px 2px black;
         text-decoration: underline 2px;
         text-align: center; }
-    #index_main section div:nth-last-child(1) {
-      margin-right: 0px; }
 
 .center {
   display: flex;
@@ -421,6 +401,44 @@ form {
   background-size: cover;
   background-position-y: center;
   width: 100%; }
+
+@media only screen and (min-width: 600px) {
+  .registro .login {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    cursor: pointer; }
+    .registro .login button {
+      padding: 0;
+      border: none;
+      background: none; }
+      .registro .login button :hover {
+        color: white;
+        background: linear-gradient(#4E5F6E, #363669);
+        text-shadow: none;
+        padding: 1px 2px;
+        border-radius: 5px;
+        text-decoration: none; }
+    .registro .login a {
+      font-size: large;
+      color: #fff;
+      text-decoration: underline; }
+  #main-formulario {
+    width: 100%; }
+    #main-formulario form {
+      width: 80%; }
+  .caja {
+    width: 90%; }
+    .caja p {
+      color: white;
+      text-shadow: 1px 1px 2px black; }
+  .cartas {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 45% 45%;
+    grid-row-gap: 30px; }
+  footer {
+    font-size: medium; } }
 
 header {
   display: flex;
@@ -465,6 +483,12 @@ header {
 .btn-group {
   width: 40%; }
 
+#main-btn {
+  background: linear-gradient(#4E5F6E, #363669);
+  border-color: black;
+  font-family: "Bebas Neue", cursive;
+  font-size: medium; }
+
 .dropdown-menu {
   text-align: center;
   border: 1px solid black; }
@@ -486,13 +510,13 @@ header {
 .login {
   display: flex; }
   .login button {
-    padding: 3px 5px;
+    padding: 3px 4px;
     border-radius: 5px;
-    border-color: #0D6EFD;
-    background-color: transparent; }
-
-button a {
-  text-decoration: none;
-  font-family: "Bebas Neue", cursive;
-  font-size: large;
-  color: black; }
+    border: 1px solid black;
+    background: linear-gradient(#4E5F6E, #363669); }
+    .login button a {
+      text-decoration: none;
+      font-family: "Bebas Neue", cursive;
+      font-size: medium;
+      color: white;
+      text-shadow: 1px 1px 2px black; }
