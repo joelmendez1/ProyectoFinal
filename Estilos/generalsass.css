@@ -36,6 +36,333 @@
   footer {
     font-size: medium; } }
 
+@media only screen and (max-width: 576px) {
+  header {
+    height: 25vh; }
+    header h2 {
+      position: absolute;
+      visibility: hidden; }
+    header div {
+      display: grid;
+      grid-template-rows: calc(100% / 3);
+      grid-template-columns: 100%;
+      height: 100%;
+      grid-template-areas: "navegador" "h1" "botones"; }
+      header div .navegador {
+        display: flex;
+        justify-content: space-around;
+        grid-area: navegador; }
+      header div h1 {
+        width: 100%;
+        grid-area: h1;
+        background-color: #ebe3e3;
+        color: white;
+        text-shadow: 1px 1px 2px black; }
+      header div .registro {
+        grid-area: botones; }
+        header div .registro .login {
+          width: 50%;
+          display: flex;
+          flex-direction: row; }
+          header div .registro .login button {
+            border: 1px solid black;
+            border-radius: 8px;
+            padding: 3px 3px;
+            background-color: #363669; }
+            header div .registro .login button a {
+              text-decoration: none; }
+              header div .registro .login button a :hover {
+                color: #ece7e7; }
+  main .center {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-position: top;
+    background-size: cover; }
+    main .center p, main .center h3 {
+      text-align: center; }
+  main section {
+    display: flex;
+    flex-direction: column; }
+    main section a {
+      min-width: 100vw;
+      height: calc(100% / 3); }
+  #contacto_main form {
+    width: 80vw; }
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 8vh; }
+    footer a {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      font-size: x-large; }
+    footer .textos_footer a {
+      visibility: hidden;
+      position: absolute; } }
+
+header {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+  header div {
+    display: grid;
+    width: 100%;
+    height: 10vh;
+    margin: auto;
+    background-color: #fff;
+    grid-template-columns: 35% auto 35%;
+    grid-template-rows: 100%;
+    grid-template-areas: "navegador logo inicio";
+    text-align: center;
+    justify-content: space-around;
+    align-items: center; }
+  header h2 {
+    color: white;
+    text-align: center;
+    background-color: black;
+    padding: 10px; }
+  header div h1 {
+    font-family: "Bebas Neue", cursive;
+    border-top: 1px  solid black;
+    border-bottom: 1px  solid black;
+    margin: auto; }
+
+.navegador {
+  display: flex;
+  justify-content: space-between;
+  grid-area: navegador;
+  font-size: large; }
+  .navegador a {
+    text-decoration: none;
+    font-family: "Bebas Neue", cursive;
+    font-size: x-large;
+    color: black; }
+  .navegador a:hover {
+    color: #bd1637; }
+
+.btn-group {
+  width: 40%; }
+
+#main-btn {
+  background: linear-gradient(#4E5F6E, #363669);
+  border-color: black;
+  font-family: "Bebas Neue", cursive;
+  font-size: medium; }
+
+.dropdown-menu {
+  text-align: center;
+  border: 1px solid black; }
+  .dropdown-menu :hover {
+    background-color: #363669; }
+  .dropdown-menu li a:hover {
+    border-radius: 5px;
+    color: white; }
+  .dropdown-menu li a {
+    text-decoration: none;
+    font-family: "Bebas Neue", cursive;
+    font-size: large;
+    color: black; }
+
+.registro {
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+  grid-area: inicio; }
+
+.login {
+  display: flex; }
+  .login button {
+    padding: 3px 4px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background: linear-gradient(#4E5F6E, #363669); }
+    .login button a {
+      text-decoration: none;
+      font-family: "Bebas Neue", cursive;
+      font-size: medium;
+      color: white;
+      text-shadow: 1px 1px 2px black; }
+
+#index_main {
+  display: flex;
+  flex-direction: column;
+  background-color: #ebe3e3; }
+  #index_main section {
+    display: flex;
+    margin-bottom: 2px; }
+    #index_main section a {
+      width: calc(100% / 3);
+      height: 60vh;
+      text-decoration: none; }
+      #index_main section a div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        margin-right: 5px;
+        border: 0.5px solid #7e7e7e;
+        border-radius: 10px; }
+      #index_main section a p {
+        font-family: "Bebas Neue", cursive;
+        font-size: xx-large;
+        color: white;
+        text-shadow: 1px 1px 2px black;
+        text-decoration: underline 2px;
+        text-align: center; }
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../Assets/Main_imagen.jpg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  margin-bottom: 10px; }
+  .center p {
+    color: white;
+    font-size: 40px;
+    font-family: "Bebas Neue", cursive;
+    text-shadow: 1px 1px 2px black; }
+  .center h3 {
+    color: white;
+    font-size: 80px;
+    text-shadow: 1px 1px 2px black; }
+
+.first_img {
+  background-image: url(../Assets/buzos_de_lana.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  width: 100%; }
+
+.second_img {
+  background-image: url(../Assets/campera_cuero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  width: 100%; }
+
+.third_img {
+  background-image: url(../Assets/zapatos.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  width: 100%; }
+
+@media only screen and (max-width: 715px) {
+  .registro .login {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    cursor: pointer; }
+    .registro .login button {
+      padding: 0;
+      border: none;
+      background: none; }
+      .registro .login button :hover {
+        color: white;
+        background: linear-gradient(#4E5F6E, #363669);
+        text-shadow: none;
+        padding: 1px 2px;
+        border-radius: 5px;
+        text-decoration: none; }
+    .registro .login a {
+      font-size: large;
+      color: #fff;
+      text-decoration: underline; }
+  #main-formulario {
+    width: 100%; }
+    #main-formulario form {
+      width: 80%; }
+  .caja {
+    width: 90%; }
+    .caja p {
+      color: white;
+      text-shadow: 1px 1px 2px black; }
+  .cartas {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 45% 45%;
+    grid-row-gap: 30px; }
+  footer {
+    font-size: medium; } }
+
+@media only screen and (max-width: 576px) {
+  header {
+    height: 25vh; }
+    header h2 {
+      position: absolute;
+      visibility: hidden; }
+    header div {
+      display: grid;
+      grid-template-rows: calc(100% / 3);
+      grid-template-columns: 100%;
+      height: 100%;
+      grid-template-areas: "navegador" "h1" "botones"; }
+      header div .navegador {
+        display: flex;
+        justify-content: space-around;
+        grid-area: navegador; }
+      header div h1 {
+        width: 100%;
+        grid-area: h1;
+        background-color: #ebe3e3;
+        color: white;
+        text-shadow: 1px 1px 2px black; }
+      header div .registro {
+        grid-area: botones; }
+        header div .registro .login {
+          width: 50%;
+          display: flex;
+          flex-direction: row; }
+          header div .registro .login button {
+            border: 1px solid black;
+            border-radius: 8px;
+            padding: 3px 3px;
+            background-color: #363669; }
+            header div .registro .login button a {
+              text-decoration: none; }
+              header div .registro .login button a :hover {
+                color: #ece7e7; }
+  main .center {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-position: top;
+    background-size: cover; }
+    main .center p, main .center h3 {
+      text-align: center; }
+  main section {
+    display: flex;
+    flex-direction: column; }
+    main section a {
+      min-width: 100vw;
+      height: calc(100% / 3); }
+  #contacto_main form {
+    width: 80vw; }
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 8vh; }
+    footer a {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      font-size: x-large; }
+    footer .textos_footer a {
+      visibility: hidden;
+      position: absolute; } }
+
 body {
   background-color: #ebe3e3; }
 
@@ -261,6 +588,74 @@ body {
   footer {
     font-size: medium; } }
 
+@media only screen and (max-width: 576px) {
+  header {
+    height: 25vh; }
+    header h2 {
+      position: absolute;
+      visibility: hidden; }
+    header div {
+      display: grid;
+      grid-template-rows: calc(100% / 3);
+      grid-template-columns: 100%;
+      height: 100%;
+      grid-template-areas: "navegador" "h1" "botones"; }
+      header div .navegador {
+        display: flex;
+        justify-content: space-around;
+        grid-area: navegador; }
+      header div h1 {
+        width: 100%;
+        grid-area: h1;
+        background-color: #ebe3e3;
+        color: white;
+        text-shadow: 1px 1px 2px black; }
+      header div .registro {
+        grid-area: botones; }
+        header div .registro .login {
+          width: 50%;
+          display: flex;
+          flex-direction: row; }
+          header div .registro .login button {
+            border: 1px solid black;
+            border-radius: 8px;
+            padding: 3px 3px;
+            background-color: #363669; }
+            header div .registro .login button a {
+              text-decoration: none; }
+              header div .registro .login button a :hover {
+                color: #ece7e7; }
+  main .center {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-position: top;
+    background-size: cover; }
+    main .center p, main .center h3 {
+      text-align: center; }
+  main section {
+    display: flex;
+    flex-direction: column; }
+    main section a {
+      min-width: 100vw;
+      height: calc(100% / 3); }
+  #contacto_main form {
+    width: 80vw; }
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 8vh; }
+    footer a {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      font-size: x-large; }
+    footer .textos_footer a {
+      visibility: hidden;
+      position: absolute; } }
+
 #contacto_main {
   background-color: #ebe3e3; }
   #contacto_main h2 {
@@ -332,191 +727,70 @@ body {
   footer {
     font-size: medium; } }
 
-#index_main {
-  display: flex;
-  flex-direction: column;
-  background-color: #ebe3e3; }
-  #index_main section {
-    display: flex;
-    margin-bottom: 2px; }
-    #index_main section a {
-      width: calc(100% / 3);
-      height: 60vh;
-      text-decoration: none; }
-      #index_main section a div {
+@media only screen and (max-width: 576px) {
+  header {
+    height: 25vh; }
+    header h2 {
+      position: absolute;
+      visibility: hidden; }
+    header div {
+      display: grid;
+      grid-template-rows: calc(100% / 3);
+      grid-template-columns: 100%;
+      height: 100%;
+      grid-template-areas: "navegador" "h1" "botones"; }
+      header div .navegador {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-around;
+        grid-area: navegador; }
+      header div h1 {
         width: 100%;
-        height: 100%;
-        margin-right: 5px;
-        border: 0.5px solid #7e7e7e;
-        border-radius: 10px; }
-      #index_main section a p {
-        font-family: "Bebas Neue", cursive;
-        font-size: xx-large;
+        grid-area: h1;
+        background-color: #ebe3e3;
         color: white;
-        text-shadow: 1px 1px 2px black;
-        text-decoration: underline 2px;
-        text-align: center; }
-
-.center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-image: url(../Assets/Main_imagen.jpg);
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 80vh;
-  margin-bottom: 10px; }
-  .center p {
-    color: white;
-    font-size: 40px;
-    font-family: "Bebas Neue", cursive;
-    text-shadow: 1px 1px 2px black; }
-  .center h3 {
-    color: white;
-    font-size: 80px;
-    text-shadow: 1px 1px 2px black; }
-
-.first_img {
-  background-image: url(../Assets/buzos_de_lana.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: center;
-  width: 100%; }
-
-.second_img {
-  background-image: url(../Assets/campera_cuero.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: center;
-  width: 100%; }
-
-.third_img {
-  background-image: url(../Assets/zapatos.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: center;
-  width: 100%; }
-
-@media only screen and (max-width: 715px) {
-  .registro .login {
+        text-shadow: 1px 1px 2px black; }
+      header div .registro {
+        grid-area: botones; }
+        header div .registro .login {
+          width: 50%;
+          display: flex;
+          flex-direction: row; }
+          header div .registro .login button {
+            border: 1px solid black;
+            border-radius: 8px;
+            padding: 3px 3px;
+            background-color: #363669; }
+            header div .registro .login button a {
+              text-decoration: none; }
+              header div .registro .login button a :hover {
+                color: #ece7e7; }
+  main .center {
     display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-around;
-    cursor: pointer; }
-    .registro .login button {
-      padding: 0;
-      border: none;
-      background: none; }
-      .registro .login button :hover {
-        color: white;
-        background: linear-gradient(#4E5F6E, #363669);
-        text-shadow: none;
-        padding: 1px 2px;
-        border-radius: 5px;
-        text-decoration: none; }
-    .registro .login a {
-      font-size: large;
-      color: #fff;
-      text-decoration: underline; }
-  #main-formulario {
-    width: 100%; }
-    #main-formulario form {
-      width: 80%; }
-  .caja {
-    width: 90%; }
-    .caja p {
-      color: white;
-      text-shadow: 1px 1px 2px black; }
-  .cartas {
-    display: grid;
-    grid-template-columns: 45% 45%;
-    grid-template-rows: 45% 45%;
-    grid-row-gap: 30px; }
+    justify-content: flex-end;
+    align-items: center;
+    background-position: top;
+    background-size: cover; }
+    main .center p, main .center h3 {
+      text-align: center; }
+  main section {
+    display: flex;
+    flex-direction: column; }
+    main section a {
+      min-width: 100vw;
+      height: calc(100% / 3); }
+  #contacto_main form {
+    width: 80vw; }
   footer {
-    font-size: medium; } }
-
-header {
-  display: flex;
-  flex-direction: column;
-  width: 100%; }
-  header div {
-    display: grid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 10vh;
-    margin: auto;
-    background-color: #fff;
-    grid-template-columns: 35% auto 35%;
-    grid-template-rows: 100%;
-    grid-template-areas: "navegador logo inicio";
-    text-align: center;
-    justify-content: space-around;
-    align-items: center; }
-  header h2 {
-    color: white;
-    text-align: center;
-    background-color: black;
-    padding: 10px; }
-  header div h1 {
-    font-family: "Bebas Neue", cursive;
-    border-top: 1px  solid black;
-    border-bottom: 1px  solid black;
-    margin: auto; }
-
-.navegador {
-  display: flex;
-  justify-content: space-between;
-  grid-area: navegador;
-  font-size: large; }
-  .navegador a {
-    text-decoration: none;
-    font-family: "Bebas Neue", cursive;
-    font-size: x-large;
-    color: black; }
-  .navegador a:hover {
-    color: #bd1637; }
-
-.btn-group {
-  width: 40%; }
-
-#main-btn {
-  background: linear-gradient(#4E5F6E, #363669);
-  border-color: black;
-  font-family: "Bebas Neue", cursive;
-  font-size: medium; }
-
-.dropdown-menu {
-  text-align: center;
-  border: 1px solid black; }
-  .dropdown-menu li a:hover {
-    border-radius: 5px;
-    color: #bd1637; }
-  .dropdown-menu li a {
-    text-decoration: none;
-    font-family: "Bebas Neue", cursive;
-    font-size: large;
-    color: black; }
-
-.registro {
-  display: flex;
-  justify-content: center;
-  align-content: flex-end;
-  grid-area: inicio; }
-
-.login {
-  display: flex; }
-  .login button {
-    padding: 3px 4px;
-    border-radius: 5px;
-    border: 1px solid black;
-    background: linear-gradient(#4E5F6E, #363669); }
-    .login button a {
-      text-decoration: none;
-      font-family: "Bebas Neue", cursive;
-      font-size: medium;
-      color: white;
-      text-shadow: 1px 1px 2px black; }
+    height: 8vh; }
+    footer a {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      font-size: x-large; }
+    footer .textos_footer a {
+      visibility: hidden;
+      position: absolute; } }
